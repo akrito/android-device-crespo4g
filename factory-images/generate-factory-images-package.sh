@@ -17,7 +17,7 @@
 # 299849 = IMM76D
 
 PRODUCT=soju
-DEVICE=crespo
+DEVICE=crespo4g
 BUILD=299849
 VERSION=imm76d
 RADIOSRC=radio.xx.img

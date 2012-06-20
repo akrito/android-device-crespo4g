@@ -34,13 +34,13 @@ install_blobs() {
     done
 }
 
-CRESPO_BLOBS="akm-crespo-imm76d-8314bd5a.tgz
-              broadcom-crespo-imm76d-a794e660.tgz
-              imgtec-crespo-imm76d-d381b3bf.tgz
-              nxp-crespo-imm76d-d3862877.tgz
-              samsung-crespo-imm76d-d2d82200.tgz"
+CRESPO4G_BLOBS="akm-crespo4g-imm76d-c1380907.tgz
+                broadcom-crespo4g-imm76d-cab16034.tgz
+                imgtec-crespo4g-imm76d-2d278929.tgz
+                nxp-crespo4g-imm76d-98dfdbd7.tgz
+                samsung-crespo4g-imm76d-534a5cf8.tgz"
 
 CSUM_LIST="$PWD/blob-shasums"
 
 cd ../../.. &&
-install_blobs nexus-s "$CRESPO_BLOBS" "$CSUM_LIST"
+install_blobs nexus-s-4g "$CRESPO4G_BLOBS" "$CSUM_LIST"

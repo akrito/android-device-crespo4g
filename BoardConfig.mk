@@ -18,7 +18,7 @@
 #
 
 # Use the non-open-source parts, if they're present
--include vendor/samsung/crespo/BoardConfigVendor.mk
+-include vendor/samsung/crespo4g/BoardConfigVendor.mk
 
 # Use the parts that are common between all crespos
-include device/samsung/crespo/BoardConfigCommon.mk
+include device/samsung/crespo4g/BoardConfigCommon.mk

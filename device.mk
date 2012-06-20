@@ -40,14 +40,14 @@ PRODUCT_COPY_FILES := \
 
 # GPS config
 PRODUCT_COPY_FILES += \
-        device/samsung/crespo/gps.xml:system/vendor/etc/gps.xml \
-        device/samsung/crespo/gps.conf:system/etc/gps.conf
+        device/samsung/crespo4g/gps.xml:system/vendor/etc/gps.xml \
+        device/samsung/crespo4g/gps.conf:system/etc/gps.conf
 
-$(call inherit-product, device/samsung/crespo/device_base.mk)
+$(call inherit-product, device/samsung/crespo4g/device_base.mk)
 
 # See comment at the top of this file. This is where the other
 # half of the device-specific product definition file takes care
 # of the aspects that require proprietary drivers that aren't
 # commonly available
-$(call inherit-product-if-exists, vendor/samsung/crespo/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/crespo4g/device-vendor.mk)
 

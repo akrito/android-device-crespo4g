@@ -37,10 +37,10 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
-$(call inherit-product, device/samsung/crespo/device.mk)
+$(call inherit-product, device/samsung/crespo4g/device.mk)
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_crespo
-PRODUCT_DEVICE := crespo
+PRODUCT_DEVICE := crespo4g
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Full Android on Crespo
+PRODUCT_MODEL := Full Android on Crespo4g

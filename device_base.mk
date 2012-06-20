@@ -39,31 +39,31 @@
 # These is the hardware-specific overlay, which points to the location
 # of hardware-specific resource overrides, typically the frameworks and
 # application settings that are stored in resourced.
-DEVICE_PACKAGE_OVERLAYS := device/samsung/crespo/overlay
+DEVICE_PACKAGE_OVERLAYS := device/samsung/crespo4g/overlay
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES := \
-	device/samsung/crespo/vold.fstab:system/etc/vold.fstab \
-	device/samsung/crespo/egl.cfg:system/lib/egl/egl.cfg
+	device/samsung/crespo4g/vold.fstab:system/etc/vold.fstab \
+	device/samsung/crespo4g/egl.cfg:system/lib/egl/egl.cfg
 
 # Init files
 PRODUCT_COPY_FILES += \
-	device/samsung/crespo/init.herring.rc:root/init.herring.rc \
-	device/samsung/crespo/init.herring.usb.rc:root/init.herring.usb.rc \
-	device/samsung/crespo/ueventd.herring.rc:root/ueventd.herring.rc
+	device/samsung/crespo4g/init.herring.rc:root/init.herring.rc \
+	device/samsung/crespo4g/init.herring.usb.rc:root/init.herring.usb.rc \
+	device/samsung/crespo4g/ueventd.herring.rc:root/ueventd.herring.rc
 
 # Prebuilt kl and kcm keymaps
 PRODUCT_COPY_FILES += \
-	device/samsung/crespo/s3c-keypad.kl:system/usr/keylayout/s3c-keypad.kl \
-	device/samsung/crespo/s3c-keypad.kcm:system/usr/keychars/s3c-keypad.kcm \
-	device/samsung/crespo/herring-keypad.kl:system/usr/keylayout/herring-keypad.kl \
-	device/samsung/crespo/herring-keypad.kcm:system/usr/keychars/herring-keypad.kcm \
-	device/samsung/crespo/cypress-touchkey.kl:system/usr/keylayout/cypress-touchkey.kl \
-	device/samsung/crespo/cypress-touchkey.kcm:system/usr/keychars/cypress-touchkey.kcm \
-	device/samsung/crespo/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
-	device/samsung/crespo/sec_jack.kcm:system/usr/keychars/sec_jack.kcm \
-	device/samsung/crespo/mxt224_ts_input.kl:system/usr/keylayout/mxt224_ts_input.kl \
-	device/samsung/crespo/mxt224_ts_input.kcm:system/usr/keychars/mxt224_ts_input.kcm
+	device/samsung/crespo4g/s3c-keypad.kl:system/usr/keylayout/s3c-keypad.kl \
+	device/samsung/crespo4g/s3c-keypad.kcm:system/usr/keychars/s3c-keypad.kcm \
+	device/samsung/crespo4g/herring-keypad.kl:system/usr/keylayout/herring-keypad.kl \
+	device/samsung/crespo4g/herring-keypad.kcm:system/usr/keychars/herring-keypad.kcm \
+	device/samsung/crespo4g/cypress-touchkey.kl:system/usr/keylayout/cypress-touchkey.kl \
+	device/samsung/crespo4g/cypress-touchkey.kcm:system/usr/keychars/cypress-touchkey.kcm \
+	device/samsung/crespo4g/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
+	device/samsung/crespo4g/sec_jack.kcm:system/usr/keychars/sec_jack.kcm \
+	device/samsung/crespo4g/mxt224_ts_input.kl:system/usr/keylayout/mxt224_ts_input.kl \
+	device/samsung/crespo4g/mxt224_ts_input.kcm:system/usr/keychars/mxt224_ts_input.kcm
 
 #Bluetooth setup
 PRODUCT_COPY_FILES += \
@@ -71,11 +71,11 @@ PRODUCT_COPY_FILES += \
 
 #NVRAM setup
 PRODUCT_COPY_FILES += \
-        device/samsung/crespo/nvram_net.txt:system/vendor/firmware/nvram_net.txt
+        device/samsung/crespo4g/nvram_net.txt:system/vendor/firmware/nvram_net.txt
 
 #MFC Firmware
 PRODUCT_COPY_FILES += \
-        device/samsung/crespo/samsung_mfc_fw.bin:system/vendor/firmware/samsung_mfc_fw.bin
+        device/samsung/crespo4g/samsung_mfc_fw.bin:system/vendor/firmware/samsung_mfc_fw.bin
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -96,9 +96,9 @@ PRODUCT_COPY_FILES += \
 
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)
-	NFCEE_ACCESS_PATH := device/samsung/crespo/nfcee_access.xml
+	NFCEE_ACCESS_PATH := device/samsung/crespo4g/nfcee_access.xml
 else
-	NFCEE_ACCESS_PATH := device/samsung/crespo/nfcee_access_debug.xml
+	NFCEE_ACCESS_PATH := device/samsung/crespo4g/nfcee_access_debug.xml
 endif
 PRODUCT_COPY_FILES += \
 	$(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
@@ -117,8 +117,8 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # These are the OpenMAX IL configuration files
 PRODUCT_COPY_FILES += \
-	device/samsung/crespo/sec_mm/sec_omx/sec_omx_core/secomxregistry:system/etc/secomxregistry \
-	device/samsung/crespo/media_profiles.xml:system/etc/media_profiles.xml
+	device/samsung/crespo4g/sec_mm/sec_omx/sec_omx_core/secomxregistry:system/etc/secomxregistry \
+	device/samsung/crespo4g/media_profiles.xml:system/etc/media_profiles.xml
 
 
 # These are the OpenMAX IL modules
@@ -158,7 +158,7 @@ PRODUCT_PACKAGES += \
 
 # Input device calibration files
 PRODUCT_COPY_FILES += \
-	device/samsung/crespo/mxt224_ts_input.idc:system/usr/idc/mxt224_ts_input.idc
+	device/samsung/crespo4g/mxt224_ts_input.idc:system/usr/idc/mxt224_ts_input.idc
 
 # for bugmailer
 PRODUCT_PACKAGES += send_bug
@@ -206,7 +206,7 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_AAPT_CONFIG := normal hdpi
 
 ifeq ($(TARGET_PREBUILT_WIFI_MODULE),)
-LOCAL_WIFI_MODULE := device/samsung/crespo/bcm4329.ko
+LOCAL_WIFI_MODULE := device/samsung/crespo4g/bcm4329.ko
 else
 LOCAL_WIFI_MODULE := $(TARGET_PREBUILT_WIFI_MODULE)
 endif
@@ -215,7 +215,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_WIFI_MODULE):system/modules/bcm4329.ko
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/samsung/crespo/kernel
+LOCAL_KERNEL := device/samsung/crespo4g/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
